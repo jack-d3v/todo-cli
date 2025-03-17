@@ -16,7 +16,7 @@ where
 }
 
 fn read_tasks() -> Result<(), Box<dyn Error>> {
-    let message: String = fs::read_to_string("message.txt")?;
+    let message: String = fs::read_to_string("tasks.txt")?;
     println!("{}", message);
     Ok(())
 }
@@ -31,7 +31,7 @@ let mut task_number: u32 = task_number_string.trim().parse().expect("Invalid num
     let mut file = OpenOptions::new()
         .append(true) // Append mode
         .create(true) // Create if not exists
-        .open("message.txt")?;
+        .open("tasks.txt")?;
 
    write!(file, "\n{}. {}", task_number, task)?; 
 
@@ -80,7 +80,7 @@ fn main() {
                     println!("Okay");
                     clearscreen::clear().expect("failed to clear screen");
                     println!("Added task {}:", task_name);
-                    read_tasks();
+                    //read_tasks();
                 }
             }
 
