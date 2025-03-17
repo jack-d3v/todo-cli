@@ -1,14 +1,14 @@
-#To-Do CLI Application
+# To-Do CLI Application
 
-##Installation and Running
+## Installation and Running
 
-###Step One: Clone the git repo.
+### Step One: Clone the git repo.
 
 Run in your command line
 
 git clone https://github.com/jack-d3v/todo-cli.git
 
-###Step Two: Run the CLI app.
+### Step Two: Run the CLI app.
 
 In your command line again run
 
@@ -18,7 +18,7 @@ Then.
 
 cargo run
 
-###Step Three: Interact with the software
+### Step Three: Interact with the software
 
 create <task name>
 
